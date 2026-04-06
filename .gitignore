@@ -1,0 +1,56 @@
+# Dependencies
+node_modules/
+
+# Environment (never commit secrets)
+.env
+.env.*
+!.env.example
+
+# Build outputs
+dist/
+.next/
+out/
+build/
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Microsoft Office lock files
+~$*
+
+# IDE / editor
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Test & coverage
+coverage/
+.nyc_output/
+
+# TypeScript
+*.tsbuildinfo
+
+# Prisma (generated client output if present outside node_modules)
+apps/backend/generated/
+
+# Local uploads (runtime files)
+apps/backend/uploads/
+
+# Tooling / deploy
+.turbo/
+.vercel/
+*.pem
+
+# Optional local SQLite / DB dumps
+*.sqlite
+*.db

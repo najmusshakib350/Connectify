@@ -1,0 +1,25 @@
+{
+  "name": "appifylab",
+  "private": true,
+  "scripts": {
+    "db:up": "docker compose up -d postgres redis",
+    "docker:up": "docker compose up -d postgres redis",
+    "docker:up:all": "docker compose up -d",
+    "docker:down": "docker compose down",
+    "dev:backend": "pnpm --filter backend start:dev",
+    "dev:frontend": "pnpm --filter frontend dev",
+    "build:backend": "pnpm --filter backend build",
+    "build:frontend": "pnpm --filter frontend build",
+    "prisma:migrate": "pnpm --filter backend run prisma:migrate",
+    "prisma:generate": "pnpm --filter backend run prisma:generate"
+  },
+  "packageManager": "pnpm@10.15.0",
+  "dependencies": {
+    "@hookform/resolvers": "^5.2.2",
+    "react-hook-form": "^7.72.1",
+    "zod": "^3.25.76"
+  },
+  "pnpm": {
+    "ignoredBuiltDependencies": ["sharp", "unrs-resolver"]
+  }
+}
